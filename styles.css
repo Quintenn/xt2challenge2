@@ -1,5 +1,5 @@
 body {
-    background: #113;
+    background: #00052f;
     animation-name: sky;
     animation-duration: 10s;
     animation-delay: 2s;
@@ -13,18 +13,19 @@ h1 {
 }
 
 .box {
-    background: white;
+    background: #fffacf;
     width: 200px;
     height: 200px;
     position: relative;
     left: 500px;
     top: 500px;
     border-radius: 50%;
+    overflow: hidden;
     animation-name: sun;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
- /*   animation-direction: reverse; */
+    animation-direction: reverse;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -45,15 +46,27 @@ h1 {
 }
 
 @keyframes sun {
-    0% {background-color: white;transform: rotate(0);transform-origin: bottom left;}
-    20% {background-color: #feffa0;}
-    30% {background-color: #feffa0;}
-    60% {background-color: #feffa0;}
-    100% {background-color: white;transform: rotate(360deg);transform-origin: bottom left;}
+/*
+    0% {background-color: #fffacf;transform: rotate(0);transform-origin: bottom left;width: 100px;height: 100px;}
+    25% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
+    50% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
+    75% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
+    100% {background-color: #fffacf;transform: rotate(720deg);transform-origin: bottom left;width: 100px;height: 100px;}
+*/
+    
+    0% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);transform: rotate(0);transform-origin: bottom left;width: 100px;height: 100px;}
+    12.5% {width: 200px;height: 200px;}
+    25% {width: 200px;height: 200px;}
+    37.5% {width: 200px;height: 200px;}
+    50% {background-color: #fffacf;width: 200px;height: 200px;}
+    62.5% {width: 100px;height: 100px;}
+    75% {width: 100px;height: 100px;}
+    87.5% {width: 100px;height: 100px;}
+    100% {transform: rotate(720deg);transform-origin: bottom left;width: 100px;height: 100px;}
 }
 
 @keyframes sky {
-    0% {background-color: #113;}
+    0% {background-color: #00052f;}
     25% {background-color: #ffbd87;}
     50% {background-color: #88eaff;}
     75% {background-color: #d86a5f;}

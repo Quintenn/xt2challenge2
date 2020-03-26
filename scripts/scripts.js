@@ -32,6 +32,23 @@ function renderClock() {
 }
 
 /**
+ * Flash seperator 
+ * @param integer - seconds
+ * @return string
+ */
+function flashSeperator(seconds) {
+	var sepClass = '';
+
+	// toggle class
+	if (seconds % 2 === 1) {
+		sepClass = ' class="trans"';
+	}
+
+	return '<span' + sepClass + '">:</span>';
+}
+
+
+/**
  * Parse the time
  * @param date object - current time 
  * @return date array
