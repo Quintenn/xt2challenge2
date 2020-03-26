@@ -18,14 +18,14 @@ h1 {
     width: 200px;
     height: 200px;
     position: relative;
-    left: 500px;
+    left: 1500px;
     top: 500px;
     border-radius: 50%;
     overflow: hidden;
     animation-name: sun;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+    animation-delay: 7s;
     animation-direction: reverse;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -36,7 +36,7 @@ h1 {
     width: 100px;
     height: 100px;
     position: relative;
-    left: 500px;
+    left: 1500px;
     top: 500px;
     border-radius: 50%;
     overflow: hidden;
@@ -73,8 +73,8 @@ h1 {
     100% {background-color: #fffacf;transform: rotate(720deg);transform-origin: bottom left;width: 100px;height: 100px;}
 */
     
-    0% {transform: rotate(0);transform-origin: bottom left;}
-    100% {transform: rotate(360deg);transform-origin: bottom left;width: 200px;height: 200px;}
+    0% {transform: rotate(0);transform-origin: 0px 500px;}
+    100% {transform: rotate(360deg);transform-origin: 0px 500px;width: 200px;height: 200px;}
 }
 
 @keyframes moon {
@@ -86,8 +86,8 @@ h1 {
     100% {background-color: #fffacf;transform: rotate(720deg);transform-origin: bottom left;width: 100px;height: 100px;}
 */
     
-    0% {transform: rotate(0);transform-origin: top right;}
-    100% {transform: rotate(360deg);transform-origin: top right;}
+    0% {transform: rotate(0);transform-origin: 0px 500px;}
+    100% {transform: rotate(360deg);transform-origin: 0px 500px;}
 }
 
 @keyframes sky {
