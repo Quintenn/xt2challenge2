@@ -1,5 +1,5 @@
 body {
-    background: #333;
+    background: #113;
     animation-name: sky;
     animation-duration: 10s;
     animation-delay: 2s;
@@ -41,12 +41,10 @@ body {
 
 @keyframes sun {
     0% {background-color: white;transform: rotate(0);transform-origin: bottom left;}
-    10% {background-color: #feffa0;}
     20% {background-color: #feffa0;}
     30% {background-color: #feffa0;}
-    40% {background-color: white;}
-    100% {background-color: white;transform:rotate(360deg);transform-origin:bottom left;
-        transform-origin:bottom left}}}
+    60% {background-color: #feffa0;}
+    100% {background-color: white;transform: rotate(360deg);transform-origin: bottom left;}
 }
 
 @keyframes sky {
@@ -60,9 +58,10 @@ body {
 
 @keyframes star {
     0% {opacity: 100%} 
-    20% {opacity: 5%} 
+    20% {opacity: 0%} 
     40% {opacity: 0%} 
-    60% {opacity: 5%}
-    80% {opacity: 90%}
+    60% {opacity: 0%}
+    70% {opacity: 80%}
+    80% {opacity: 100%}
     100% {opacity: 100%}
 }
