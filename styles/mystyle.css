@@ -1,0 +1,17 @@
+
+body{
+	font-family: helvetica;
+	color: #FFFFFF;
+	background-color: #444444;
+}
+
+
+#mainHeading {
+	font-size: 2em;
+}
+
+#mainHeading.changesSize {
+	transition-duration: 3s;
+	/*transition-delay: 2s;*/
+	font-size: 4em;
+}
