@@ -18,7 +18,7 @@ h1 {
     width: 200px;
     height: 200px;
     position: relative;
-    left: 1500px;
+    left: 1400px;
     top: 500px;
     border-radius: 50%;
     overflow: hidden;
@@ -36,7 +36,7 @@ h1 {
     width: 100px;
     height: 100px;
     position: relative;
-    left: 1500px;
+    left: 1400px;
     top: 500px;
     border-radius: 50%;
     overflow: hidden;
@@ -51,11 +51,12 @@ h1 {
 
 .stars {
     background: white;
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 5px;
     position: relative;
     left: 700px;
     border-radius: 50%;
+    margin: 50px;
     animation-name: star;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -74,7 +75,7 @@ h1 {
 */
     
     0% {transform: rotate(0);transform-origin: 0px 500px;}
-    100% {transform: rotate(360deg);transform-origin: 0px 500px;width: 200px;height: 200px;}
+    100% {transform: rotate(360deg);transform-origin: 0px 500px;}
 }
 
 @keyframes moon {
