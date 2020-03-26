@@ -1,4 +1,18 @@
-
+//function animationSync(date) {
+//    var time = [];
+//    
+//    time['seconds'] = date.getSeconds();
+//	time['minutes'] = date.getMinutes();
+//	time['hours']   = date.getHours();
+//	time['month']   = date.getMonth();
+//	time['day']     = date.getDay();
+//    
+//    if (time['day'] > 1) {
+//		document.getElementById("wah").style.color = "white";
+//	}
+//}
+//
+//animationSync();
 /**
  * Start clock
  */
@@ -58,7 +72,7 @@ function getCurrentTime(date) {
 
 	// fill array
 	time['seconds'] = date.getSeconds();
-	time['minutes'] = date.getMinutes(),
+	time['minutes'] = date.getMinutes();
 	time['hours']   = date.getHours();
 	time['month']   = date.getMonth();
 	time['day']     = date.getDay();
@@ -71,6 +85,22 @@ function getCurrentTime(date) {
 	// minutes: add leading zero
 	if (time['minutes'] < 10) {
 		time['minutes'] = '0' + time['minutes'];
+	}
+    
+    if (time['day'] < 10) {
+		time['day'] = '0' + time['day'];
+        document.getElementById("wah").style.color = "white";
+        
+	}
+    
+    if (time['day'] < 10) {
+		time['day'] = '0' + time['day'];
+        document.getElementById("wah").style.color = "white";
+        
+	}
+    
+     if (time['hours'] > 22) {
+		document.getElementsByClassName("box").style.backgroundColor = "blue";
 	}
 
 	return time;
@@ -86,6 +116,20 @@ function getCurrentMonth(monthNumber) {
 
 	return months[monthNumber];
 }
+
+//function animationSync(date) {
+//    var time = [];
+//    
+//    time['seconds'] = date.getSeconds();
+//	time['minutes'] = date.getMinutes();
+//	time['hours']   = date.getHours();
+//	time['month']   = date.getMonth();
+//	time['day']     = date.getDay();
+//    
+//    if (time['hours'] > 1) {
+//		document.getElementById"wah").style.color = "blue";
+//	}
+//}
 
 // start
 initClock();

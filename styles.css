@@ -16,6 +16,12 @@ h1 {
     font-size: 20px;
 }
 
+.wah {
+    width: 500px;
+    height: 500px;
+    color: blue;
+}
+
 .box {
     background: rgb(251,242,156);background: linear-gradient(180deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);
     width: 200px;
