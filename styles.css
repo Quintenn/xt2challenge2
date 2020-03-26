@@ -14,12 +14,12 @@ h1 {
 }
 
 .box {
-    background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);
+    background: rgb(251,242,156);background: linear-gradient(180deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);
     width: 200px;
     height: 200px;
     position: relative;
-    left: 1400px;
-    top: 500px;
+    left: 1300px;
+    top: 400px;
     border-radius: 50%;
     overflow: hidden;
     animation-name: sun;
@@ -36,8 +36,8 @@ h1 {
     width: 100px;
     height: 100px;
     position: relative;
-    left: 1400px;
-    top: 500px;
+    left: 1300px;
+    top: 400px;
     border-radius: 50%;
     overflow: hidden;
     animation-name: moon;
