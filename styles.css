@@ -1,0 +1,68 @@
+body {
+    background: #333;
+    animation-name: sky;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 500px;
+    top: 500px;
+    border-radius: 50%;
+    animation-name: sun;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+ /*   animation-direction: reverse; */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.stars {
+    background: white;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 700px;
+    border-radius: 50%;
+    animation-name: star;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sun {
+    0% {background-color: white;transform: rotate(0);transform-origin: bottom left;}
+    10% {background-color: #feffa0;}
+    20% {background-color: #feffa0;}
+    30% {background-color: #feffa0;}
+    40% {background-color: white;}
+    100% {background-color: white;transform:rotate(360deg);transform-origin:bottom left;
+        transform-origin:bottom left}}}
+}
+
+@keyframes sky {
+    0% {background-color: #113;}
+    20% {background-color: #a4c1e2;}
+    40% {background-color: #33beff;}
+    60% {background-color: #1450a3;}
+    80% {background-color: #335;}
+    100% {background-color: #113;}
+}
+
+@keyframes star {
+    0% {opacity: 100%} 
+    20% {opacity: 5%} 
+    40% {opacity: 0%} 
+    60% {opacity: 5%}
+    80% {opacity: 90%}
+    100% {opacity: 100%}
+}
