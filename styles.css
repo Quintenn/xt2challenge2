@@ -7,6 +7,11 @@ body {
     animation-iteration-count: infinite;
 }
 
+h1 {
+    font-family: Arial;
+    color: white;
+}
+
 .box {
     background: white;
     width: 200px;
