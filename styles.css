@@ -12,25 +12,16 @@ h1 {
     font-family: Arial;
     color: white;
     text-align: right;
-    font-size: 20px;
+    font-size: 1.875em;
 }
-
-#wah {
-    width: 500px;
-    height: 500px;
-    color: blue;
-}
-
-
-
 
 .box {
     background: rgb(251,242,156);background: linear-gradient(180deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);
-    width: 200px;
-    height: 200px;
+    width: 12.5em;
+    height: 12.5em;
     position: relative;
-    left: 1000px;
-    top: 400px;
+    left: 62.5em;
+    top: 25em;
     border-radius: 50%;
     overflow: hidden;
     animation-name: sun;
@@ -44,10 +35,10 @@ h1 {
 
 .box2 {
     background: #fffacf;
-    width: 100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     position: relative;
-    left: 1000px;
+    left: 62.5em;
     top: 400px;
     border-radius: 50%;
     overflow: hidden;
@@ -72,29 +63,13 @@ h1 {
 }
 
 @keyframes sun {
-/*
-    0% {background-color: #fffacf;transform: rotate(0);transform-origin: bottom left;width: 100px;height: 100px;}
-    25% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
-    50% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
-    75% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
-    100% {background-color: #fffacf;transform: rotate(720deg);transform-origin: bottom left;width: 100px;height: 100px;}
-*/
-    
-    0% {transform: rotate(0);transform-origin: 0px 500px;}
-    100% {transform: rotate(360deg);transform-origin: 0px 500px;}
+    0% {transform: rotate(0);transform-origin: 0em 31.25em;}
+    100% {transform: rotate(360deg);transform-origin: 0em 31.25em;}
 }
 
 @keyframes moon {
-/*
-    0% {background-color: #fffacf;transform: rotate(0);transform-origin: bottom left;width: 100px;height: 100px;}
-    25% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
-    50% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
-    75% {background: rgb(251,242,156);background: linear-gradient(0deg, rgba(251,242,156,1) 0%, rgba(251,242,156,0.2) 80%, rgba(251,148,33,0) 100%);width: 200px;height: 200px;}
-    100% {background-color: #fffacf;transform: rotate(720deg);transform-origin: bottom left;width: 100px;height: 100px;}
-*/
-    
-    0% {transform: rotate(0);transform-origin: 0px 500px;}
-    100% {transform: rotate(360deg);transform-origin: 0px 500px;}
+    0% {transform: rotate(0);transform-origin: 0em 31.25em;}
+    100% {transform: rotate(360deg);transform-origin: 0em 31.25em;}
 }
 
 @keyframes sky {

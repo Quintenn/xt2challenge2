@@ -1,20 +1,3 @@
-//function animationSync(date) {
-//    var time = [];
-//    
-//    time['seconds'] = date.getSeconds();
-//	time['minutes'] = date.getMinutes();
-//	time['hours']   = date.getHours();
-//	time['month']   = date.getMonth();
-//	time['day']     = date.getDay();
-//    
-//    if (time['day'] > 1) {
-//		document.getElementById("wah").style.color = "white";
-//	}
-//}
-//
-//animationSync();
-
-
 /**
  * Start clock
  */
@@ -89,25 +72,6 @@ function getCurrentTime(date) {
 		time['minutes'] = '0' + time['minutes'];
 	}
     
-//    if (time['day'] < 10) {
-//		time['day'] = '0' + time['day'];
-//        document.getElementsByClassName("box").style.animationDelay = "-10s";
-//        
-//	}
-//    
-
-//    
-    
-//    if (time['day'] < 20) {
-//		time['day'] = '0' + time['day'];
-//        document.getElementById("wah").style.color = "purple";
-//        
-//	}
-    
- 
-//     if (time['hours'] > 22) {
-//		document.getElementsByClassName("box").style.animationDelay = "10s";
-//	}
 
 	return time;
 }
@@ -122,9 +86,10 @@ function getCurrentMonth(monthNumber) {
 
 	return months[monthNumber];
 }
+
 //syncing animation with real time (unsuccesfully)
 //de bedoeling hier is dat de animaties net zoveel secondes duren als dat er secondes in de dag zitten, en als het bv. 10 uur is dat de animaties van de lucht etc. een animationDelay van -14 uur krijgen zodat ze beginnen op de positie van 10 uur. maar helaas zit het niet mee.
-function myFunction(date) {
+function animationSync(date) {
     var date = new Date();
     var time = date.getHours();
     
@@ -221,8 +186,13 @@ function myFunction(date) {
         document.getElementById("box2").style.animationDelay = "-1s";
         document.getElementById("sky").style.animationDelay = "-1s";
     }
-    
-    
+}
+
+// start
+initClock();
+
+//here are unsuccesful tests to sync the animations.
+
 //    else if (hours = 2)   {document.getElementById("box").style.animationDelay = "-22s";}
 //    else if (hours = 3)   {document.getElementById("box").style.animationDelay = "-21s";}
 //    else if (hours = 4)   {document.getElementById("box").style.animationDelay = "-20s";}
@@ -247,8 +217,6 @@ function myFunction(date) {
 //    else if (hours = 23)  {document.getElementById("box").style.animationDelay = "-1s";}
     
 //  document.getElementById("box").style.animationDelay = "-5s";
-}
-
 
 //function animationSync(date) {
 //    var time = [];
@@ -264,5 +232,41 @@ function myFunction(date) {
 //	}
 //}
 //myFunction();
-// start
-initClock();
+
+//    if (time['day'] < 10) {
+//		time['day'] = '0' + time['day'];
+//        document.getElementsByClassName("box").style.animationDelay = "-10s";
+//        
+//	}
+//    
+
+//    
+    
+//    if (time['day'] < 20) {
+//		time['day'] = '0' + time['day'];
+//        document.getElementById("wah").style.color = "purple";
+//        
+//	}
+    
+ 
+//     if (time['hours'] > 22) {
+//		document.getElementsByClassName("box").style.animationDelay = "10s";
+//	}
+
+//function animationSync(date) {
+//    var time = [];
+//    
+//    time['seconds'] = date.getSeconds();
+//	time['minutes'] = date.getMinutes();
+//	time['hours']   = date.getHours();
+//	time['month']   = date.getMonth();
+//	time['day']     = date.getDay();
+//    
+//    if (time['day'] > 1) {
+//		document.getElementById("wah").style.color = "white";
+//	}
+//}
+//
+//animationSync();
+
+
