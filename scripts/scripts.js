@@ -13,6 +13,8 @@
 //}
 //
 //animationSync();
+
+
 /**
  * Start clock
  */
@@ -20,7 +22,7 @@ function initClock() {
 
 	// init
 	renderClock();
-
+    
 	// run every second
 	setInterval(renderClock, 1000);
 }
@@ -87,21 +89,27 @@ function getCurrentTime(date) {
 		time['minutes'] = '0' + time['minutes'];
 	}
     
-    if (time['day'] < 10) {
-		time['day'] = '0' + time['day'];
-        document.getElementById("wah").style.color = "white";
-        
+//    if (time['day'] < 10) {
+//		time['day'] = '0' + time['day'];
+//        document.getElementsByClassName("box").style.animationDelay = "-10s";
+//        
+//	}
+//    
+       if (time['hours'] > 10) {
+		time['hours'] = '0' + time['hours'];
 	}
+//    
     
-    if (time['day'] < 10) {
-		time['day'] = '0' + time['day'];
-        document.getElementById("wah").style.color = "white";
-        
-	}
+//    if (time['day'] < 20) {
+//		time['day'] = '0' + time['day'];
+//        document.getElementById("wah").style.color = "purple";
+//        
+//	}
     
-     if (time['hours'] > 22) {
-		document.getElementsByClassName("box").style.backgroundColor = "blue";
-	}
+ 
+//     if (time['hours'] > 22) {
+//		document.getElementsByClassName("box").style.animationDelay = "10s";
+//	}
 
 	return time;
 }
@@ -117,6 +125,16 @@ function getCurrentMonth(monthNumber) {
 	return months[monthNumber];
 }
 
+function myFunction() {
+    var date = new Date();
+    var hours = date.getHours();
+    
+    if (hours > 1) {document.getElementById("box").style.animationDelay = "-5s";}
+    
+//  document.getElementById("box").style.animationDelay = "-5s";
+}
+
+
 //function animationSync(date) {
 //    var time = [];
 //    
@@ -127,9 +145,9 @@ function getCurrentMonth(monthNumber) {
 //	time['day']     = date.getDay();
 //    
 //    if (time['hours'] > 1) {
-//		document.getElementById"wah").style.color = "blue";
+//		document.getElementById("wah").style.color = "blue";
 //	}
 //}
-
+//myFunction();
 // start
 initClock();

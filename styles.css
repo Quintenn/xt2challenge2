@@ -6,7 +6,6 @@ body {
     animation-delay: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    background-image: url("stars.png");
 }
 
 h1 {
@@ -34,7 +33,7 @@ h1 {
     animation-name: sun;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-delay: 7s;
+    animation-delay: 0s;
     animation-direction: reverse;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -52,7 +51,7 @@ h1 {
     animation-name: moon;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+    animation-delay: -5s;
     animation-direction: reverse;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
