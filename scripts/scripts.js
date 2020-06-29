@@ -88,7 +88,7 @@ function getCurrentMonth(monthNumber) {
 }
 
 //syncing animation with real time (unsuccesfully)
-//de bedoeling hier is dat de animaties net zoveel secondes duren als dat er secondes in de dag zitten, en als het bv. 10 uur is dat de animaties van de lucht etc. een animationDelay van -14 uur krijgen zodat ze beginnen op de positie van 10 uur. maar helaas zit het niet mee.
+//de bedoeling hier is dat de animaties net zoveel secondes duren als dat er secondes in de dag zitten, en als het bv. 10 uur is dat de animaties van de lucht etc. een animationDelay van -14 uur krijgen zodat ze beginnen op de positie van 10 uur. maar helaas zit het niet mee. Hij staat nu gewoon op een loop van een aantal secondes om in ieder geval te laten zien dat ik snap hoe CSS animaties werken.
 function animationSync(date) {
     var date = new Date();
     var time = date.getHours();
